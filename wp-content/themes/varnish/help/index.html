@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Varnish: Help Documentation</title>
+
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="css/screen.css" type="text/css" />
+	
+</head>
+
+<body>
+
+	<!-- wrapper -->
+	<div id="wrapper" class="content">
+	
+		<h1>Varnish <span>WordPress Theme</span></h1>
+		<p>Created: 06/19/2009<br />
+		By: <a href="http://themeforest.net/user/mattbrett">Matt Brett</a><br />
+		Contact Info: Please send a direct message <a href="http://themeforest.net/user/mattbrett/">via ThemeForest</a> if you are not able to find the answer you're looking for in this document.</p>
+		
+		<h3>Version History &amp; Changelog</h3>
+		
+		<p><strong>Version 1.4 &#8211; Released: 08/13/2010</strong></p>
+		
+		<ul>
+			<li><strong>NEW</strong> WP 3.0 Menu support for main navigation.</li>
+			<li>Updated Theme Settings panel with cleaner visual style, new colour picker, and made it a top-level item - now appears at the bottom of the navigation menu instead of under Appearance.</li>
+		</ul>
+		
+		<p><strong>Version 1.3 &#8211; Released: 05/17/2010</strong></p>
+		
+		<ul>
+			<li>Fixed a bug that prevented the background from aligning properly with custom colour scheme enabled.</li>
+			<li>Small CSS change to pagination numbering when using the WP-PageNavi plugin.</li>
+			<li>Dumped the theme options function in an include file and replace all instances with a standard PHP include.</li>
+		</ul>
+		
+		<p><strong>Version 1.2 &#8211; Released: 02/18/2010</strong></p>
+		
+		<ul>
+			<li><strong>NEW</strong> Added the ability to apply background patterns. 20 patterns bundled!</li>
+			<li><strong>NEW</strong> The entire site can now be centered in the browser window.</li>
+			<li><strong>NEW</strong> WP 2.9+ Post Thumbnails &#8211; old method still in tact.</li>
+			<li><strong>NEW</strong> Other smaller miscellaneous additions, like the ability to hide the Twitter bird, change the positioning of the background texture, etc.</li>
+			<li>Moved the name and description from the sidebar to above the content area to allow for better compatibility with longer names.</li>
+			<li>Fixed a bug that prevented code from being properly escaped in the head include.</li>
+			<li>Fixed 125x125 buttons widget to allow use of non-image ads, such as AdSense.</li>
+			<li>Updated bundled TimThumb to version 1.12.</li>
+			<li>Updated Theme Settings panel and help documentation to be more clear and concise.</li>
+		</ul>
+		
+		<p><strong>Version 1.1 &#8211; Released: 07/23/2009</strong></p>
+		
+		<ul>
+			<li>Fixed a bug that broke the comments template if the Subscribe to Comments plugin isn't installed.</li>
+		</ul>
+		
+		<p><strong>Version 1.0 &#8211; Released: 06/19/2009</strong></p>
+		
+		<ul>
+			<li>Initial release.</li>
+		</ul>
+		
+		<h3>Table of Contents</h3>
+		
+		<ul>
+		  <li>A) <a href="#section-A">Installation &amp; Initial Setup</a></li>
+		  <li>B) <a href="#section-B">Post Thumbnails</a></li>
+		  <li>C) <a href="#section-C">Setting up the Nav</a></li>
+			<li>D) <a href="#section-D">Widgetized Sidebars</a></li>
+			<li>E) <a href="#section-E">Managing Ads</a></li>
+			<li>F) <a href="#section-F">Miscellaneous Theme Settings</a></li>
+		  <li>G) <a href="#section-G">Support &amp; Feature Requests</a></li>
+			<li>H) <a href="#section-H">TimThumb: Dynamic Image Resizer</a></li>
+			<li>I) <a href="#section-I">Supported Plugins</a></li>
+			<li>J) <a href="#section-J">Credits</a></li>
+		</ul>
+		
+		<!-- SECTION A
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-A" name="section-A"></a>A) Installation &amp; Initial Setup</h2>
+		
+		<p>Unpack the zip file you've downloaded from ThemeForest, and upload the /varnish directory to the /wp-content/themes directory on your server.</p>
+		
+		<p>There are a few things you should do once you have Varnish installed:</p>
+		
+		<p>For starters, things may look a  little messed up until you save the theme settings.  Head over to the Theme Settings panel found in the Appearance section of WP-Admin and hit the Save Changes button.</p>
+		
+		<p>To find an ID, go to the Pages screens in WP-Admin and hover over the name you want to exclude. Glance down to the status bar in your browser and take a look at the path.  post= at the end of the URL is what you’re after.</p>
+		
+		<!-- SECTION B
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-B" name="section-B"></a>B) Post Thumbnails</h2>
+		
+		<p><strong>WordPress 2.9+ Post Thumbnails</strong><br/>
+		If you're running version Varnish 1.2 and WordPress 2.9 or above, you can make use of the new Post Thumbnails functionality.  In this case, assigning an image to be the post thumbnail is very easy.  Simply upload your image using the built-in media manager, then click the "Use as thumbnail" link.</p>
+		
+		<p><strong>Backwards Compatible Dynamic Image Resizing</strong><br/>
+		For previous versions of WordPress to 2.9, Varnish uses <a href="http://code.google.com/p/timthumb/">Tim McDaniels' TimThumb</a> script for resizing the images used in archive listings.  Simply upload your images using the built-in media manager or direct FTP, then copy/paste the original file's path into the Post Image field in the Additional Information box.  This method can be used if you simply don't want to use the built-in Post Thumbnail functionality, for whatever reason.</p>
+		
+		<p>When you enter image paths in WP-Admin, they can be relative or absolute.  For example, if your image path is <em>http://mydomain.com/wp-content/uploads/2010/01/image.jpg</em>, you could use that full path, or one that is relative to the site root - <em>/wp-content/uploads/2010/01/image.jpg</em>.  Either will work.</p>
+		
+		<p><strong>Incompatible Server Environment Workaround</strong><br/>
+		In the case that your server is incompatible, you will have to resize images manually if you want them to look their best.  Otherwise, images will be resized via CSS restrictions, which doesn't produce the best results.  If you're manually resizing thumbnails, save them at 150x113.</p>
+		
+		<!-- SECTION C
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-C" name="section-C"></a>C) Setting up the Nav</h2>
+		
+		<p>New in version 1.4 is the ability to built a dynamic navigation right from WP-Admin.  If you're running WordPress 3.0 or above, heave to the Apperance -&gt; Menus section and create a new menu.  Typically, the main navigation is called Main Nav.  You can now add any pages or categories you'd like to the nav.  Reorganize them however you'd like, but keep in mind that Varnish only supports 2 levels of navigation.</p>
+	
+		<p>If you don't setup a custom nav, a dynamic nav is created from pages.</p>
+		
+		<!-- SECTION D
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-D" name="section-D"></a>D) Widgetized Sidebars</h2>
+		
+		<p>The sidebars are widgetized, so you can drag and drop standard WP widgets and custom widgets designed specifically for Varnish.  I didn't test every single widget I could get my hands on, but the most popular ones should display just fine.</p>
+		
+		<p>Please refer to <a href="http://codex.wordpress.org/Appearance_Widgets_SubPanel/">the WordPress Codex</a> if you're unfamiliar with using widgets.</p>
+		
+		<!-- SECTION E
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-E" name="section-E"></a>E) Managing Ads</h2>
+		
+		<p>There are several built-in ad spots in Varnish.  On the Theme Settings panel you will see a series of text areas after the basic settings which are for the ads.  Once you have placed your code in the appropriate areas and saved, you will need to add the associated widgets to the sidebars.</p>
+
+		<p>The 125×125 buttons widget can support any number of ads, up to 4.
+
+		<p>Varnish has built-in support for the following ads…
+
+		<ul>
+			<li><strong>120×600 Skyscraper</strong><br/>
+			Left sidebar widget.</li>
+			<li><strong>160×600 Skyscraper</strong><br/>
+			Right sidebar widget.</li>
+			<li><strong>125×125 Buttons (4x)</strong><br/>
+			Right sidebar widget.</li>
+			<li><strong>300×250 Big Box</strong><br/>
+			Floats to the right of content in posts.</p>
+			<li><strong>468×60 Banner</strong><br/>
+			Sits between post content and comments.</li>
+		</ul>
+		
+		<p>Each ad box renders out the code you put it in as regular HTML.  I'm assuming most people will be using an ad service like AdSense which provides code snippets you simply paste in.  If you want to display your own buttons or ads, you'll need to use full HTML here.  For example...</p>
+		
+		<p><em>&lt;a href=&#8221;http://themeforest.net?ref=mattbrett&#8221;&gt;&lt;img src=&#8221;/wp-content/themes/varnish/images/TF_728x90.jpg&#8221; alt=&#8221;" /&gt;&lt;/a&gt;</em></p>
+		
+		<!-- SECTION F
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-F" name="section-F"></a>F) Miscellaneous Theme Settings</h2>
+		
+		<p>There are a few other options on the Theme Settings panel that haven’t been covered above.</p>
+
+		<p><strong>Photo Path</strong> – If you’d like a photo of yourself to appear in the top left corner, write the path to one here.  The image can be any size, really.  But the column is 160px wide, and the image will be centered with the overflow hidden.  That means, if you’re image is wider than 160px, the center of the image will be shown, while the rest will be hidden.  The height is variable.</p>
+
+		<p><strong>First Name, Last Name</strong> – In order to give you more flexible, I opted to using custom fields for your name, as opposed to using the blog name.  This way, you can control the size and spacing of each name, or just have one displayed, if that’s what you’d like.</p>
+
+		<p><strong>Social Profiles</strong> – There’s a long list of links with corresponding icons for the sites that you take part in.  Like just about everything else, these are completely optional.  Put the URLs to your profile in whichever services you use and save, leaving those you don’t use blank.  Blank entries remain hidden.</p>
+		
+		<!-- SECTION G
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-G" name="section-G"></a>G) Support &amp; Feature Requests</h2>
+		
+		<p>Please <strong>send me an email via <a href="http://themeforest.net/user/mattbrett">my ThemeForest profile</a></strong> if you’re having trouble with your theme, and I will do my best to get back to you as soon as possible. Please be patient, as I work freelance full time and do not have dedicated time for theme support. <strong>I rarely answer support requests left as comments on ThemeForest</strong>.</p>
+
+    <p>Also, it would be a good idea to a read through my <a href="http://mattbrett.com/marketplace/support/">Terms of Support document</a>, which outlines the extent of support I offer, and information regarding updates, warranty, and compatibility.</p>
+		
+		<!-- SECTION H
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-H" name="section-H"></a>H) TimThumb: Dynamic Image Resizer</h2>
+		
+		<p><a href="http://code.google.com/p/timthumb/">TimThumb</a> requires the GD library, which is available on any host sever with PHP 4.3+ installed.  There shouldn't be a problem with most web hosts, but if images are broken, this could be why.  Contact your host and see if they can help you out.</p>
+		
+		<p>If you are certain your server is compatible, you may need to check that the /cache directory is writable on your web server &#8211; set the permissions to 755 or 777.</p>
+		
+		<p>If you absolutely cannot get TimThumb to work, I can offer no further assistance.  As such, I've included an option in Theme Settings to disable image resizing entirely.  In this case, you will have to resize images manually.</p>
+		
+		<!-- SECTION I
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-I" name="section-I"></a>I) Supported Plugins</h2>
+		
+		<p>Most plugins will work just fine with Varnish.  But Varnish has been tailored to work with the following plugins out of the box...</p>
+		
+		<ul>
+			<li><a href="http://wordpress.org/extend/plugins/flickr-rss/">FlickrRSS</a></li>
+			<li><a href="http://wordpress.org/extend/plugins/subscribe-to-comments/">Subscribe to Comments</a></li>
+			<li><a href="http://wordpress.org/extend/plugins/twitter-tools/">Twitter Tools</a></li>
+			<li><a href="http://wordpress.org/extend/plugins/wp-pagenavi/">WP-PageNavi</a></li>
+		</ul>
+		
+		<!-- SECTION J
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span><a id="section-J" name="section-J"></a>J) Credits</h2>
+		
+		<p>Dynamic image resizing via Tim McDaniels' TimThumb.<br />
+		<a href="http://code.google.com/p/timthumb/">http://code.google.com/p/timthumb/</a></p>
+		
+		<p>Icons for social networking sites are part of Komodo Media’s Social Media Mini Iconpack. Thanks Rogie! <br />
+		<a href="http://www.komodomedia.com/blog/2008/12/social-media-mini-iconpack/">http://www.komodomedia.com/blog/2008/12/social-media-mini-iconpack/</a></p>
+		
+		<p>Twitter bird icon from Function Design &amp; Development Studio.<br />
+		<a href="http://www.wefunction.com/2009/05/40-free-twitter-badges/">http://www.wefunction.com/2009/05/40-free-twitter-badges/</a></p>
+		
+		<!-- CLOSING
+		==================================================================================================== -->
+		
+		<h2><span class="top"><a href="#table-contents">Back to Top &uarr;</a></span>Thank You</h2>
+		
+		<p>Once again, thank you so much for purchasing this theme! As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p>
+		
+		<p><strong>Matt Brett</strong><br />
+		- <a href="http://mattbrett.com">http://mattbrett.com</a><br />
+		- <a href="http://twitter.com/mattbrett">http://twitter.com/mattbrett</a><br />
+		- <a href="http://themeforest.net/user/mattbrett">http://themeforest.net/user/mattbrett</a></p>
+	
+	</div>
+	<!-- /wrapper -->
+
+</body>
+</html>

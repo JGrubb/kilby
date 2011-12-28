@@ -1,0 +1,1 @@
+document.write('</div>'); // separate files for myspace which does not gracefully filter inline javascript

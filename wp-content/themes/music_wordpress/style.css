@@ -1,0 +1,1613 @@
+/*
+Theme Name: Music Template - Wordpress Template
+Theme URI: http://www.davidwoolfdesigns.com/music_wordpress
+Description: A wordpress template geared towards musicians / artists. Sold on Themeforest.com
+Version: 2.0
+Author: David Woolf
+Author URI: http://www.davidwoolfdesigns.com
+Tags: minimalist, music, template, clean
+*/
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td { 
+	margin: 0; 
+	padding: 0; 
+}
+
+body {
+	background: #f6f6f6 url(graphics/background.png) repeat-x;
+	font: 62.5%/1.6 "arial","helvetica neue", "helvetica", sans-serif;
+}
+
+a {
+	outline: none;
+}
+
+#header_wrapper {
+	background-color: #fff;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	margin: 0px auto;
+	padding: 0px 25px 30px 25px;
+	width: 938px;
+}
+
+#header {
+	height: 65px;
+	width: 100%;
+}
+
+#header h1 {
+	background: url(graphics/logo.png) no-repeat left 26px;
+	color: #555;
+	float: left;
+	font-size: 3.6em;
+	letter-spacing: -1px;
+	line-height: 75px;
+	padding: 0px 0px 0px 46px;
+}
+
+#header h1 a {
+	color: #555;
+	text-decoration: none;
+}
+
+#linkbar {
+	background-color: #f9f9f9;
+	float: right;
+	list-style-type: none;
+	margin: 28px -25px 0px 0px;
+	padding: 0px 25px 0px 0px;
+	position: relative;
+	z-index: 10;
+}
+
+#linkbar li {
+	float: left;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	z-index: 10;
+}
+
+#linkbar li a {
+	color: #1b1b1b;
+	display: block;
+	font-size: 1.3em;
+	font-weight: 900;
+	padding: 5px 12px 3px 12px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+#linkbar a:hover {
+	background-color: #555;
+	color: #fff;
+}
+
+#linkbar li.current_page_item a {
+	background-color: #555;
+	color: #fff;
+}
+
+#linkbar li ul {
+	background-color: #f9f9f9;
+	display: none;
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	position: absolute;
+	top: 28px;
+	width: 140px;
+	z-index: 10;
+}
+
+#linkbar li ul li {
+	float: none;
+	padding: 0px;
+	position: relative;
+	z-index: 10;
+}
+
+#linkbar li ul li a {
+	border-bottom: 1px solid #f6f6f6;
+	border-left: 1px solid #f6f6f6;
+	border-right: 1px solid #f6f6f6;
+	float: none;
+	font-size: 1.2em;
+	margin: 0px;
+	padding: 8px 10px 8px 10px;
+	position: relative;
+	z-index: 10;
+}
+
+#linkbar li ul li.current_page_item a {
+	background-color: #f9f9f9;
+	color: #222;
+}
+
+#linkbar li.current_page_item ul li a {
+	background-color: #fff;
+	color: #222;
+}
+
+#linkbar li ul li a:hover {
+	background-color: #f6f6f6;
+	color: #222;
+}
+
+/* Content */
+
+#content {
+	background-color: #fff;
+	border: 1px solid #eee;
+	border-top: 0px;
+	border-bottom: 0px;
+	margin: -5px auto 0px auto;
+	min-height: 400px;
+	padding: 0px 25px 5px 25px;
+	width: 938px;
+}
+
+#content h1 { /* Stylized for usability, but should be reserved for header, use h2 */
+	color: #333;
+	font-size: 3.6em;
+	font-weight: 400;
+}
+
+#content h2 {
+	border-bottom: 1px solid #f6f6f6;
+	color: #555;
+	font-size: 3.0em;
+	height: 42px;
+	line-height: 38px;
+	margin: -10px 0px 10px 0px;
+}
+
+#content h2.inline {
+	border-bottom: 0px;
+	height: auto;
+}
+
+#content h3 {
+	color: #389fe7;
+	font-size: 2.4em;
+	letter-spacing: -1px;
+	line-height: 25px;
+	margin: 5px 0px 7px 0px;
+}
+
+#content h3 a {
+	color: #389fe7;
+	font-size: 1.0em;
+	text-decoration: none;
+}
+
+#content h3 a:hover {
+	background-color: #fafafa;
+}
+
+#content h4 {
+	font-size: 1.8em;
+	font-weight: 400;
+}
+
+#content h5 {
+	font-size: 1.3em;
+}
+
+#content h6 {
+	font-size: 1.1em;
+}
+
+#content p {
+	font-size: 1.3em;
+	padding: 8px 0px 8px 0px;
+}
+
+#content a {
+	color: #389fe7;
+	font-size: 1.3em;
+	font-weight: 900;
+}
+
+#content ul li {
+	font-size: 1.2em;
+}
+
+#content table {
+	border-collapse: collapse;
+	font-size: 1.2em;
+	margin: 10px 0px 10px 0px;
+}
+
+#content tr {
+}
+
+#content tr.odd_row {
+	background-color: #eee;
+}
+
+#content th {
+	text-align: left;
+	padding: 2px 20px 3px 5px;
+}
+
+#content td {
+	padding: 2px 25px 3px 5px;
+}
+
+#content blockquote {
+	background-color: #fdfdfd;
+	border: 1px solid #ddd;
+	font-size: 1.1em;
+	font-style: italic;
+	line-height: 25px;
+	margin: 10px 0px 10px 0px;
+	padding: 20px 20px 20px 40px;
+}
+
+#content a.list_link { /* Group of links with gradient background */
+	background: url(graphics/link_gradient_bg.png) repeat-x;
+	border: 1px solid #ccc;
+	color: #333;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 5px 0px 10px -1px;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+}
+
+#content a.list_link:hover {
+	color: #000;
+}
+
+#content a.list_link:active {
+	background: url(graphics/link_bg_inverted.png) repeat-x;
+}
+
+#main_column {
+	float: left;
+	width: 627px;
+}
+
+#main_column img {
+	width: 100%;
+}
+
+ul#side_column {
+	background-color: #fff;
+	border-left: 1px solid #f6f6f6;
+	float: right;
+	list-style-type: none;
+	margin: 5px 0px 10px 0px;
+	padding: 0px 0px 5px 10px;
+	width: 275px;
+}
+
+#side_column h3 {
+	border-bottom: 1px dotted #f6f6f6;
+	border-top: 1px dotted #f6f6f6;
+	color: #389fe7;
+	font-size: 1.6em;
+	line-height: 26px;
+	padding: 5px 0px 10px 20px;
+	margin: 0px 0px 5px -10px;
+}
+
+#side_column ul {
+	margin-bottom: 3px;
+}
+
+ul#side_column ul li {
+	color: #444;
+	font-size: 1.0em;
+	list-style-type: none;
+}
+
+#side_column li a {
+	color: #555;
+	display: block;
+	font-size: 1.0em;
+	font-weight: 400;
+	margin-left: -10px;
+	padding: 3px 0px 3px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#side_column li a:hover {
+	background-color: #f9f9f9;
+}
+
+#side_column #searchform {
+        left: 10px;
+	margin: 5px 0px 25px 0px;
+	padding: 12px 0px 15px 10px;
+        position: relative;
+        width: 265px;
+}
+
+#side_column #searchform label {
+	display: none;
+}
+
+#side_column #searchform input {
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	height: 20px;
+        left: 0px;
+	padding: 2px 6px 2px 6px;
+        position: absolute;
+	width: 184px;
+}
+
+#side_column #searchform #searchsubmit {
+	background-color: #fff;
+	border: 1px solid #eee;
+	display: block;
+	height: 26px;
+        left: 197px;
+	padding: 2px 10px 2px 10px;
+	position: absolute;
+	width: 70px;
+}
+
+#side_column #searchform #searchsubmit:hover {
+	cursor: pointer;
+}
+
+#side_column #searchform input:focus {
+	outline: none;
+}
+
+#side_column .widget_tag_cloud div a {
+	display: inline;
+}
+
+/* Side Column Flick Widget */
+
+#widget_flickr_stream{
+	margin: 15px 0px 20px 10px;
+}
+
+#widget_flickr_stream li {
+	border: 3px solid #eee;
+	float: left;
+	height: 45px;
+	margin: 0px 10px 10px 0px;
+	width: 45px;
+}
+
+#widget_flickr_stream li a {
+        background-color: #eee;
+        border: 0px;
+        color: #eee;
+	margin: 0px;
+	padding: 0px;
+}
+
+#widget_flickr_stream li a:hover {
+	background-color: transparent;
+}
+
+#widget_flickr_stream li img {
+        background-color: #eee;
+        border: 0px;
+        color: #eee;
+	height: 45px;
+	margin: 0px;
+	padding: 0px;
+	width: 45px;
+}
+
+/* Footer */
+
+#footer {
+	background-color: #fff;
+	border: 1px solid #eee;
+	margin: 0px auto 15px auto;
+	min-height: 40px;
+	padding: 0px 25px 15px 25px;
+	width: 938px;
+}
+
+#footer .footer_section {
+	border-right: 1px solid #eee;
+	float: left;
+	padding: 10px 0px 0px 0px;
+	margin-right: 20px;
+}
+
+#footer .footer_section ul {
+	list-style-type: none;
+}
+
+#footer .footer_section li {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+#footer .footer_section li span.important {
+	font-size: 1.1em;
+	padding: 2px 30px 2px 0px;
+}
+
+#footer .footer_section a {
+	color: #555;
+	display: block;
+	padding: 2px 30px 2px 0px;
+	text-decoration: none;
+}
+
+#footer .footer_section a:hover {
+	background-color: #f6f6f6;
+}
+
+#twitter_feed {
+	background-color: #f9f9f9;
+	color: #333;
+	float: right;
+	padding: 20px 10px 10px 0px;
+	position: relative;
+	width: 350px;
+}
+
+#twitter_feed ul {
+	list-style-type: none;
+}
+
+#twitter_feed a {
+	color: #555;
+	display: block;
+	padding: 2px 10px 2px 0px;
+	text-decoration: none;
+}
+
+div#twitter_feed ul li span.important { /* Twitter Header */
+	font-size: 1.2em;
+	margin: 0px -65px 0px 0px;
+	padding: 5px 10px 5px 65px;
+	text-transform: uppercase;
+}
+
+#twitter_feed li#twitter_content { /* Actual tweet */
+	font-size: 1.2em;
+	margin: 0px 0px 0px 55px;
+	padding: 0px 10px 10px 10px;
+	text-transform: uppercase;
+}
+
+#twitter_feed .tweetList {
+	margin-top: 10px;
+}
+
+#twitter_feed li#twitter_content p {
+    line-height: 20px;
+}
+
+#twitter_feed li#twitter_content a {
+	color: #389fe7;
+	overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#twitter_feed li#twitter_date {
+	font-size: 1.1em;
+	font-weight: 900;
+	margin-left: 55px;
+	padding: 0px 10px 10px 10px;
+	width: auto;
+}
+
+li#twitter_bird { /* Bird Image in the Footer */
+	background: #f9f9f9 url(graphics/twitter_bird.png) no-repeat;
+	height: 30px;
+	left: 15px;
+	position: absolute;
+	top: 45px;
+	width: 35px;
+}
+
+/* Home Page Styling */
+
+/* Home Page Bio / Accordion */
+
+#band_mini_bio {
+	float: left;
+	height: 558px;
+	padding: 0px 12px 0px 0px;
+	width: 448px;
+}
+
+#band_mini_bio img {
+	border: 1px solid #1c1c1c;
+	height: 250px;
+	width: 446px;
+}
+
+#featured_posts {
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	height: 150px;
+	margin: 15px 0px 0px 0px;
+	width: 446px;
+}
+
+#featured_posts h3 {
+	font-size: 2.0em;
+	padding: 5px 10px;
+}
+
+#featured_posts h4 {
+	border-bottom: 1px solid #f6f6f6;
+	font-size: 1.4em;
+	padding: 0px 10px 5px 10px;
+}
+
+#featured_posts h4 a {
+	color: #555;
+}
+
+#announcement { /* Vertical accordion menu on home page */
+	border: 1px solid #eee;
+	float: right;
+	height: 558px;
+	list-style-type: none;
+	margin: 0px 0px 10px 0px;
+	overflow: hidden;
+	position: relative;
+	width: 458px;
+	z-index: 1;
+}
+
+#announcement li {
+	border-bottom: 1px solid #eee;
+	height: 50px;
+	list-style-type: none;
+	margin-bottom: -1px;
+	overflow: hidden;
+	position: relative;
+	width: 458px;
+}
+
+#announcement #current { /* Changes based on jquery */
+	height: 458px;
+}
+
+#announcement a.order { /* Numbering system for horizontal accordion slider */
+	color: #666;
+	display: block;
+	float: left;
+	font-size: 2.4em;
+	font-weight: bold;
+	line-height: 50px;
+	padding: 0px 15px 0px 17px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#announcement li span.announce_title {
+	border: 0px;
+	color: #444;
+	font-size: .8em;
+	letter-spacing: -.5px;
+	position: relative;
+	top: -3px;
+}
+
+#announcement a.order:hover {
+	color: #333;
+}
+
+#announcement #current a.order:hover { /* Current li showing shouldn't have link do anything */
+	color: #666;
+}
+
+#announcement #current span.announce_title {
+	color: #555;
+}
+
+#announcement li div { /* Main content in each accordion level goes in here */
+	border-top: 1px solid #eee;
+	margin: 50px 0px 0px 17px;
+	padding: 10px 0px 0px 0px;
+	width: 420px;
+}
+
+#announcement li div img {
+	border: 1px solid #eee;
+	height: 228px;
+	margin-right: 15px;
+	width: 100%;
+}
+
+#announcement li div p {
+	font-size: 1.1em;
+	padding: 0px 10px 5px 0px;
+}
+
+#content #announcement a.list_link { /* Group of links with gradient background */
+	font-size: 1.0em;
+}
+
+.column_first {
+	border-top: 1px solid #f6f6f6;
+	float: left;
+	padding: 5px 30px 0px 0px;
+	width: 448px;
+}
+
+#featured_post_slider {
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	height: 140px;
+	list-style-type: none;
+	margin-top: 15px;
+	min-height: 140px;
+	overflow: hidden;
+	padding: 10px;
+	width: 426px;
+}
+
+#featured_post_slider li {
+	height: 140px;
+	min-height: 140px;
+	width: 428px;
+}
+
+#featured_post_slider li h4 {
+	border-bottom: 1px solid #eee;
+	color: #222;
+	font-size: 1.2em;
+	padding: 0px 0px 0px 0px;
+	margin: -5px 10px 5px 0px;
+}
+
+#featured_post_slider li p {
+	font-size: 1.0em;
+	padding: 0px;
+}
+
+.column_second {
+	border-top: 1px solid #f6f6f6;
+	float: right;
+	padding: 5px 0px 0px 0px;
+	position: relative;
+	width: 458px;
+}
+
+#flickr_area {
+	list-style-type: none;
+	margin-top: 15px;
+}
+
+#flickr_area li {
+	border: 3px solid #eee;
+	float: left;
+	height: 65px;
+	margin: 0px 20px 20px 0px;
+	width: 65px;
+}
+
+#flickr_area li a {
+        background-color: #eee;
+        border: 1px solid #eee;
+        color: #eee;
+
+}
+
+#flickr_area li a img {
+        background-color: #eee;
+        border: 0px;
+        color: #eee;
+	height: 65px;
+	width: 65px;
+}
+
+/* Blog Styling */
+
+.blog_post {
+	margin: 0px 0px 40px 0px;
+	padding: 0px 0px 10px 0px;
+	position: relative;
+}
+
+#content .blog_post h3 { /* Blog Post Title */
+	height: 25px;
+	margin-bottom: 5px;
+	padding: 0px 0px 5px 0px;
+}
+
+#content div.blog_post h3 a:hover {
+	border-bottom: 1px solid #ccc;
+}
+
+#content .blog_post p {
+	padding-left: 2px;
+}
+
+#content .blog_post img {
+	border: 1px solid #ddd;
+	margin: 0px 0px 0px 0px;
+	width: auto;
+}
+
+#content .blog_post img.alignleft {
+	float: left;
+	margin: 5px 14px 0px 0px;
+	max-width: 100%;
+	width: auto;
+}
+
+#content .blog_post img.alignright {
+	float: right;
+	margin: 9px 0px 0px 14px;
+	max-width: 100%;
+	width: auto;
+}
+
+#content .blog_post_info { /* Info such as author, posting date, and comments (comments floated right) */
+	height: 30px;
+	margin: -5px 0px 5px 0px;
+	padding: 2px 0px 0px 0px;
+}
+
+#content .blog_post_info ul {
+	height: 25px;
+}
+
+#content .blog_post_info li {
+	background-color: #f9f9f9;
+	color: #222;
+	display: inline;
+	float: left;
+	font-size: 1.2em;
+	font-weight: 400;
+	list-style-type: none;
+	margin-right: -1px;
+	padding: 3px 8px 3px 8px;
+	text-transform: uppercase;
+}
+
+#content .blog_post_info li a {
+	color: #222;
+	font-size: 1.0em;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#content .blog_post_info li a:hover {
+	color: #389fe7;
+}
+
+#content .blog_post_info li.info_last {
+	float: right;
+	margin-right: 1px;
+}
+
+#content .blog_post a.more-link {
+	padding: 0px;
+	text-decoration: none;
+}
+
+#content .blog_post p.read_more { /* Read More Button */
+	background-color: #f6f6f6;
+	bottom: -1px;
+	color: #47bbef;
+	font-size: .9em;
+	font-weight: 900;
+	padding: 3px 10px 2px 8px;
+	position: absolute;
+	right: 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	z-index: 6;
+}
+
+#content .blog_post .post_tags {
+	background-color: #f9f9f9;
+	bottom: -1px;
+	height: 20px;
+	left: 0px;
+	padding: 2px 0px 3px 0px;
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+#content .blog_post .post_tags p {
+	float: left;
+	padding: 0px 10px 0px 10px;
+}
+
+#content .blog_post .post_tags a {
+	color: #555;
+	float: left;
+	padding: 0px 10px 0px 0px;
+}
+
+#content .blog_post .post_shadow {
+	background: url(graphics/post_shadow.png) no-repeat;
+	bottom: -20px;
+	height: 20px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+}
+
+#content .blog_navigation {
+	margin: -20px 0px 10px 0px;
+	text-align: right;
+}
+
+#content .blog_post .secondary_info { /* Less important h3 titles (comments, leave a comment, etc.) */
+	background-color: #f9f9f9;
+	color: #333;
+	font-size: 2.0em;
+}
+
+#content .blog_post a.post-edit-link { /* When logged in as admin, this link appears at the end of a post to edit */
+	border: 1px solid #eee;
+	color: #555;
+	font-size: 1.2em;
+	padding: 3px 10px 3px 10px;
+	text-decoration: none;
+}
+
+#content .blog_post a.post-edit-link:hover {
+	color: #389fe7;
+}
+
+ul.comment li { /* individual comments in blog posts */
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #f6f6f6;
+	list-style-type: none;
+	margin: 10px 0px 10px 0px;
+	min-height: 65px;
+	padding: 0px 10px 5px 10px;
+	position: relative;
+}
+
+#content ul.comment img {
+	border: 3px solid #f4f4f4;
+        height: 56px;
+	left: 10px;
+	max-height: 56px; /* Height and width also need to be updated in comments.php on line 27 for the avatar_size, set it to whatever this is */
+	max-width: 56px;
+        min-height: 56px;
+        min-width: 56px;
+	position: absolute;
+	top: 10px;
+}
+
+#content ul.comment cite { /* Name of person */
+	color: #389fe7;
+	font-size: 1.1em;
+	font-style: normal;
+	font-weight: 800;
+	left: 70px;
+	position: relative;
+	top: 6px;
+}
+
+#content ul.comment cite a {
+	font-size: 1.0em;
+}
+
+#content ul.comment span { /* little says next to name */
+	left: 70px;
+	position: relative;
+	top: 5px;
+}
+
+#content ul.comment div.comment-body em {
+	bottom: 10px;
+	color: #555;
+	position: absolute;
+	right: 10px;
+}
+
+#content ul.comment div.comment-meta {
+	background-color: #f6f6f6;
+	padding: 3px 0px 3px 0px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+#content ul.comment div.comment-meta a {
+	color: #555;
+	font-size: 1.0em;
+	font-weight: 400;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+}
+
+#content ul.comment p {
+	font-size: 1.0em;
+	left: 70px;
+	padding: 10px 80px 10px 0px;
+	position: relative;
+}
+
+#content ul.comment div.reply a {
+	color: #555;
+	font-size: 1.0em;
+	left: 70px;
+	position: relative;
+	top: -4px;
+}
+
+ul.children li { /* For replying to comments */
+	background-color: #fff;
+	list-style-type: none;
+	margin: 5px 0px 10px 25px;
+	min-height: 75px;
+	padding: 0px 10px 5px 10px;
+	position: relative;
+}
+
+#content ul.comment ul.children cite {
+	font-size: .9em;
+}
+
+#content ul.comment ul.children span {
+	font-size: .9em;
+}
+
+#content ul.comment ul.children p {
+	font-size: .9em;
+}
+
+#content ul.comment ul.children div.comment-meta {
+	font-size: .85em;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+#content ul.comment p.cancel-comment-reply { /* When replying, this link cancels. This section reverses the 70px indent for paragraph elements set above */
+	left: 5px;
+	position: relative;
+}
+
+#content ul.comment p#logged_in_info {
+	left: 15px;
+}
+
+#content p.cancel-comment-reply a {
+	font-size: 1.0em;
+}
+
+div#respond { /* Holds contact form, merely has margin property to account for when it moves for replying to comments */
+	margin-bottom: 40px;
+}
+
+#comment_form { /* Form at the end of each blog post to post a comment */
+	margin: -6px 0px -26px -8px;
+}
+
+#comment_form fieldset {
+	border: 1px solid #ddd;
+	width: 100%;
+}
+
+#comment_form input {
+	border: 1px solid #ddd;
+	color: #555;
+	display: block;
+	height: 21px;
+	margin: 10px 0px 10px 10px;
+	padding: 4px 5px 5px 5px;
+	width: 330px;
+}
+
+input:focus, textarea:focus {
+	background-color: #fdfdfd;
+}
+
+#comment_form textarea {
+	border: 1px solid #ddd;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	height: 175px;
+	margin-left: 10px;
+	max-height: 175px;
+	min-height: 175px;
+	max-width: 500px;
+	min-width: 500px;
+	padding: 7px 5px 2px 5px;
+	width: 500px;
+}
+
+#comment_form #submit {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #333;
+	font-size: 1.4em;
+	height: 30px;
+	margin: 8px 0px 10px 10px;
+	padding: 0px 3px 2px 3px;
+	text-align: center;
+	width: 75px;
+}
+
+#comment_form #submit:hover {
+	background-color: #f6f6f6;
+	cursor: pointer;
+}
+
+#comment_form label {
+	float: left;
+	font-size: 1.2em;
+}
+
+p#logged_in_info { /* When logged in, this appears above the textbox for commenting */
+	left: 10px;
+	position: relative;
+}
+
+p#logged_in_info a {
+	font-size: 1.0em;
+}
+
+/* Tour Info Page Styling */
+
+#main_concert {
+	border-bottom: 1px solid #f6f6f6;
+	height: 215px;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 15px 0px;
+	width: 100%;
+}
+
+#main_concert h3 {
+	color: #555;
+	font-size: 2.2em;
+	margin-bottom: 0px;
+}
+
+#main_concert img {
+	border: 1px solid #ddd;
+	float: left;
+	height: 215px;
+	margin: 3px 27px 0px 0px;
+	width: 273px;
+}
+
+#upcoming_concerts { /* Five upcoming concerts */
+	float: left;
+	margin: 0px 0px 0px 0px;
+	width: 273px;
+}
+
+.summary_concert {
+	border-bottom: 1px solid #f6f6f6;
+	height: 180px;
+	margin: 0px 0px 15px 0px;
+	width: 273px;
+}
+
+#content .summary_concert h4 {
+	color: #333;
+	font-size: 2.0em;
+	line-height: 24px;
+}
+
+#list_tour_dates { /* Specialized list with three categories */
+	float: right;
+	list-style-type: none;
+	margin: 0px 0px 10px 0px;
+	text-transform: uppercase;
+	width: 640px;
+}
+
+#list_tour_dates li {
+	border-bottom: 1px solid #f6f6f6;
+	font-size: 1.2em;
+	padding: 8px 0px 8px 5px;
+}
+
+#list_tour_dates li.odd {
+	background-color: #f8f8f8;
+}
+
+#list_tour_dates li span.important {
+	font-size: 1.1em;
+}
+
+#list_tour_dates li a {
+	border-left: 1px solid #ddd;
+	color: #222;
+	font-size: 1.0em;
+	font-weight: 800;
+	padding: 2px 0px 1px 10px;
+	text-decoration: none;
+}
+
+#list_tour_dates li a:hover {
+	color: #389fe7;
+}
+
+#list_tour_dates li span.first_category {
+	display: block;
+	float: left;
+	width: 260px;
+}
+
+#list_tour_dates li span.second_category {
+	display: block;
+	float: left;
+	width: 260px;
+}
+
+#list_tour_dates li.sold_out {
+	color: #aaa;
+}
+
+/* Tour Photos Page Styling */
+
+#content #tour_albums {
+	list-style-type: none;
+	position: relative;
+}
+
+#content #tour_albums li {
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	float: left;
+	height: 238px;
+	margin: 0px 12px 11px 0px;
+	width: 176px;
+}
+
+#content #tour_albums li.last_row_item {
+	margin-right: 0px;
+}
+
+#content #tour_albums li h3 {
+	color: #222;
+	font-size: 1.4em;
+	margin: 10px 10px 7px 10px;
+}
+
+#content #tour_albums li img {
+	height: 118px;
+	margin: 10px 0px 15px 10px;
+	width: 157px;
+}
+
+#content #tour_albums li p {
+	font-size: .88em;
+	margin: -13px 0px 0px 10px;
+}
+
+#content #tour_albums li p.album_date {
+	text-transform: uppercase;
+}
+
+#content #tour_albums li div.photo_container {
+	background-color: #fff;
+	border-top: 1px solid #f6f6f6;
+	border-bottom: 1px solid #f6f6f6;
+	display: none;
+	height: 465px;
+	left: -25px;
+	overflow: hidden;
+	padding: 20px 5px 20px 5px;
+	position: absolute;
+	top: -11px;
+	width: 978px;
+	z-index: 8;
+}
+
+#content #tour_albums li div.photo_container div.photo_buffer { /* Actual images are stored in this div */
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+
+#content #tour_albums li div div.exit_container {
+	background-color: #fff;
+	height: 25px;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+#content #tour_albums li div .exit {
+	background-color: #f6f6f6;
+	color: #555;
+	float: right;
+	font-size: 1.0em;
+	font-weight: 400;
+	margin: -1px 13px -5px 0px;
+	padding: 2px 10px 2px 10px;
+	text-decoration: none;
+}
+
+#content #tour_albums li div .exit:hover {
+	background-color: #f9f9f9;
+}
+
+#content #tour_albums li div img {
+	border: 1px solid #ddd;
+	float: left;
+	height: 133px;
+	margin: 15px 5px 0px 10px;
+	width: 177px;
+}
+
+#content #tour_albums li div img:hover {
+	cursor: pointer;
+}
+
+#content #tour_albums li div.album_controls {
+	background-color: #fff;
+	bottom: 0px;
+	height: 25px;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+
+#content #tour_albums li div.album_controls a {
+	background-color: #f6f6f6;
+	color: #555;
+	display: block;
+	float: left;
+	left: 464px;
+	font-weight: 400;
+	height: 25px;
+	margin-right: -1px;
+	position: relative;
+	text-decoration: none;
+	top: 3px;
+	width: 34px;
+}
+
+#content #tour_albums li div.album_controls .up_control {
+	background: #f6f6f6 url(graphics/arrow_up.png) no-repeat;
+	background-position: -34px 0px;
+	color: #aaa;
+	cursor: default;
+}
+
+#content #tour_albums li div.album_controls .down_control {
+	background: #f6f6f6 url(graphics/arrow_down.png) no-repeat;
+}
+
+#template_path { /* Trick used to get template directory path or javascript file (tour_ui.js), so no reason to display it */
+	display: none;
+}
+
+/* Album Page Styling */
+
+#content .album_section {
+	background-color: #fafafa;
+	border: 1px solid #eee;
+	height: 100px;
+	list-style-type: none;
+	margin: 10px 0px 10px 0px;
+	overflow: hidden;
+	position: relative;
+	width: 936px;
+}
+
+#content .album_section .album_cover {
+	height: 80px;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 80px;
+	z-index: 4;
+}
+
+#content .album_section h3 {
+	background-color: #fafafa; /* DO NOT get rid of this, it will make text jagged in IE7 on hover effect */
+	color: #555;
+	display: inline;
+	float: left;
+	font-size: 2.2em;
+	height: 50px;
+	left: 110px;
+	letter-spacing: -.5px;
+	padding: 28px 0px 0px 0px;
+	position: absolute;
+	top: 0px;
+	z-index: 4;
+}
+
+#content .album_section .buy_album {
+	border-left: 1px solid #eee;
+	height: 75px;
+	padding: 0px 10px 0px 20px;
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	z-index: 6;
+}
+
+#content .album_section .buy_album a {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #555;
+	font-size: 1.0em;
+	font-weight: 400;
+	margin-left: 5px;
+	padding: 5px 10px;
+	text-decoration: none;
+	position: relative;
+	top: 27px;
+	z-index: 6;
+}
+
+#content .album_section .buy_album a:hover {
+	background-color: #f6f6f6;
+}
+
+#content .album_section .open_album { /* Invisible link to open albums */
+	display: block;
+	height: 100px;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 936px;
+	z-index: 5;
+}
+
+#content .album_info {
+	border-top: 1px solid #f6f6f6;
+	left: 10px;
+	min-height: 100px;
+	padding: 10px 0px 10px 0px; /* Make sure to update album_ui.js if you change the top / bottom values, see help file */
+	position: absolute;
+	top: 100px;
+	width: 916px;
+}
+
+#content .album_info .album_extras {
+	float: left;
+	list-style-type: none;
+	margin-left: 10px;
+	text-align: right;
+	width: 135px;
+}
+
+#content .album_info .album_extras h4 {
+	background-color: #fafafa;
+	color: #47bbef;
+	font-size: 1.4em;
+	margin: -5px 0px 0px 0px;
+}
+
+#content .album_info .album_extras p {
+	font-size: .9em;
+}
+
+#content .album_info .album_extras p.important {
+	border-bottom: 1px solid #f3f3f3;
+	color: #555;
+	font-weight: 400;
+	margin-bottom: -5px;
+	padding: 10px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+#content .album_info .album_songs {
+	float: right;
+	width: 750px;
+}
+
+#content .album_info .album_songs li {
+	font-size: 1.2em;
+	height: 24px;
+	font-size: 1.0em;
+	list-style-type: none;
+	padding: 10px 5px 10px 5px;
+}
+
+#content .album_info .album_songs li a {
+	color: #222;
+	font-size: 1.1em;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#content .album_info .album_songs li a:hover {
+	color: #389fe7;
+}
+
+#content .album_info .album_songs .odd_song {
+	background-color: #f6f6f6;
+}
+
+/* Contact Page Styling */
+
+#contact_area {
+	border: 1px solid #f6f6f6;
+	height: 400px;
+	margin: 49px 0px 10px 0px;
+	padding: 0px 10px 0px 10px;
+	position: relative;
+	width: 916px;
+}
+
+#contact_nav {
+	list-style-type: none;
+	left: -11px;
+	position: relative;
+	top: -32px;
+}
+
+#contact_nav li {
+	float: left;
+}
+
+#contact_nav li a { /* Border property for this is set in contact_ui.js on line 5, 32, and 61 */
+	background-color: #fff;
+	color: #555;
+	display: block;
+	font-weight: 400;
+	font-size: 1.3em;
+	padding: 3px 10px 3px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#contact_area h3 {
+	font-size: 2.2em;
+	letter-spacing: -.5px;
+}
+
+.contact_form { /* Actual email form in each section */
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 400px;
+}
+
+.contact_other_info_first { /* Top right section */
+	position: absolute;
+	right: 30px;
+	top: 10px;
+	width: 400px;
+}
+
+.contact_other_info_second { /* Bottom right section */
+	padding: 5px 0px 0px 0px;
+	position: absolute;
+	right: 30px;
+	top: 200px;
+	width: 400px;
+}
+
+#contact_area .contact_form form {
+	margin: 15px 0px 0px 0px;
+}
+
+#contact_area .contact_form fieldset {
+	border: 0px;
+}
+
+#contact_area .contact_form p {
+	margin: 0;
+	padding: 0;
+}
+
+#contact_area .contact_form input {
+	border: 1px solid #ddd;
+	color: #555;
+	height: 15px;
+	font-size: .9em;
+	margin-bottom: 10px;
+	padding: 8px;
+	width: 382px;
+}
+
+#contact_area .contact_form input.wpcf7-submit {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #555;
+	height: 34px;
+	font-size: .9em;
+	padding: 8px;
+	width: 80px;
+}
+
+#contact_area .contact_form input.wpcf7-submit:hover {
+	cursor: pointer;
+}
+
+#contact_area .contact_form textarea {
+	border: 1px solid #ddd;
+	color: #555;
+	font-family: Arial, Helvetica;
+	font-size: .9em;
+	height: 120px;
+	margin-bottom: 10px;
+	padding: 8px;
+	resize: none;
+	width: 382px;
+}
+
+#contact_area .wpcf7-not-valid-tip {
+	background-color: transparent;
+	border: 0;
+	color: #f00;
+	left: 55%;
+	top: -5px;
+}
+
+#contact_area .wpcf7-response-output {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	left: -10000px;
+	top: -10000px;
+}
+
+#template_path_contact { /* Hidden, used to get template path which is then stored in contact_ui.js */
+	display: none;
+}
+
+/* Predefined Classes */
+
+.clear_div { /* For floated divs, this makes their height recognized in parent divs */
+	clear: both;
+}
+
+.important {
+	color: #333;
+	font-weight: 900;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img.alignleft {
+	float: left;
+	margin: 8px 14px 0px 0px;
+	max-width: 100%;
+	width: auto;
+}
+
+img.alignright {
+	float: right;
+	margin: 9px 0px 0px 14px;
+	max-width: 100%;
+	width: auto;
+}
+
+#main_column .blog_post img.alignnone {
+	max-width: 100%;
+	width: auto;
+}
+
+.full_width { /* For images and margin positioning */
+	margin: 10px 0px 10px 0px;
+}
+
+.hidden_object { /* Merely used for inserting variable bases php data into javascript files by .text value */
+	display: none;
+}
+
+#content blockquote.error {
+	border: 1px solid #f6f6f6;
+	color: #f00;
+	font-style: normal;
+}

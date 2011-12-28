@@ -1,0 +1,45 @@
+body { color: #422b18; background-color: #d9d2bf; }
+#intro { color: #422b18; }
+#name { color: #422b18; }
+#name a { color: #a00a0a; }
+#name a:hover { color: #382413; }
+#desc { color: #422b18; }
+#nav li a, #nav li.current_page_item ul li a { color: #624023; }
+#nav li a:hover, #nav li.current_page_item ul li a:hover { color: #382413; }
+#nav li.current_page_item a { color: #382413; }
+#social li a { color: #624023; }
+#social li a:hover { color: #382413; }
+#search #s { color: #422b18; }
+#search #s:focus { color: #d9d2bf; }
+#twitter h2 { color: #a00a0a; }
+.content a:link, .content a:visited, .content a:active { color: #624023; }
+.content a:hover { color: #382413; }
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 { color: #422b18; }
+#archive-title h2 { color: #422b18; }
+#archive-title h2 strong { color: #422b18; }
+.content h2 { color: #a00a0a; }
+.content h2 a:link, .content h2 a:visited, .content h2 a:active { color: #422b18; }
+.content h2 a:hover { color:#382413; }
+.content h3 { color: #a00a0a; }
+.content .wp-caption p { color: #422b18; }
+a:link.button, a:visited.button, a:active.button { color: #d9d2bf; background-color: #a00a0a; border: 3px solid #d9d2bf; }
+a:hover.button { color: #d9d2bf; background-color: #a00a0a; border: 3px solid #d9d2bf; }
+#content .navigation a { color: #d9d2bf; background-color: #a00a0a; border: 3px solid #d9d2bf; }
+#content .navigation a:hover { color: #d9d2bf; background-color: #a00a0a; border: 3px solid #d9d2bf; }
+.content .wp-pagenavi a, .content .wp-pagenavi a:link, .content .wp-pagenavi a:visited, .content .wp-pagenavi a:active { color: #d9d2bf; background-color: #422b18; }
+.content .wp-pagenavi a:hover { color: #d9d2bf; background-color: #422b18; }
+.content .wp-pagenavi span.pages { color: #422b18; }
+.content .wp-pagenavi span.current, .content .wp-pagenavi span.extend { color: #422b18; background-color: #d9d2bf; }
+.content .wp-pagenavi span.current { color: #d9d2bf; background-color: #a00a0a; }
+.post-date span { color: #d9d2bf; background-color: #a00a0a; }
+.post-categories { color: #422b18; }
+#comments .bypostauthor > div > div > .avatar { background: #a00a0a; }
+#comments h2 { color: #a00a0a; }
+#commentform label small span { color: #422b18; }
+#commentform input, #commentform textarea { color: #422b18; background: #d9d2bf; border: 1px solid #422b18; }
+#commentform input:focus, #commentform textarea:focus { color: #d9d2bf; background: #422b18; border: 1px solid #422b18; }
+#commentform #submit { color: #d9d2bf; background-color: #a00a0a; border: 3px solid #d9d2bf; }
+#commentform #submit:hover { color: #d9d2bf; background-color: #a00a0a; border: 3px solid #d9d2bf; }
+#footer { color: #422b18; }
+#footer a:link, #footer a:visited, #footer a:active { color: #422b18; }
+#footer a:hover { color: #422b18; }

@@ -1,0 +1,54 @@
+body, #photo, #photo span, #branding, #nav li a, #nav li a:hover, #nav li.current_page_item a, #nav li.current_page_item ul li a, #social li a, #subscribe, #subscribe ul li a, #subscribe-feed, #search, #flickr, #flickr a, #flickr a:hover, #twitter ul, #twitter ul li, #archive-title, .content hr, .content .wp-caption p, .content img, a:link.button, a:visited.button, a:active.button, a:hover.button, #content .navigation a, #content .navigation a:hover, .content .wp-pagenavi a, .content .wp-pagenavi a:link, .content .wp-pagenavi a:visited, .content .wp-pagenavi a:active, .content .wp-pagenavi span.current, .post, .post-date .post-date span, #comments .commentlist li, #comments .commentlist li.thread-alt, #comments h2, #commentform #submit, #commentform #submit:hover, .widget, #sidebar-left .widget {
+	background: transparent;
+}
+
+#sidebar-right {
+}
+
+#content {
+	overflow: hidden;
+}
+
+#photo-center {
+	display: none;
+}
+
+#subscribe ul li {
+	padding: 0 20px 5px;
+}
+
+#subscribe ul li a {
+	padding: 0;
+}
+
+#subscribe {
+	clear: both;
+	padding-top: 10px;
+}
+
+#search #s {
+	margin-bottom: 10px;
+	padding: 6px 10px 2px 26px;
+	background: url("../images/search-input-focus.png") no-repeat 0 50%;
+}
+
+#search #submit {
+	float: right;
+}
+
+.widget {
+	padding: 10px 0;
+}
+
+#twitter ul {
+	margin: 0;
+}
+
+#twitter ul li {
+	padding: 0 20px 20px;
+}
+
+.post-date {
+	width: 75px;
+	margin-right: 0;
+}

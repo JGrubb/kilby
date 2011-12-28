@@ -1,0 +1,1 @@
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Sidebar Right") ) : include( TEMPLATEPATH . '/widgets/twitter.php' ); ?>&nbsp;<?php endif; ?>	

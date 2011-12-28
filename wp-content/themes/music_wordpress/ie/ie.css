@@ -1,0 +1,7 @@
+#content li a.order span.announce_title {
+	font-size: .8em; /* IE7 Doesn't show the cufon text, so the font-size needs to be accomodated for that browser through this file */
+}
+
+#content #tour_albums li div.photo_container {
+	top: -262px;
+}

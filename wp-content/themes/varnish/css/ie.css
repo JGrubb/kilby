@@ -1,0 +1,18 @@
+#logo span {
+	cursor: pointer;
+}
+
+#search #s {
+	filter: alpha(opacity=100);
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+}
+
+#ad-buttons a {
+	margin: 0 0 20px 30px;
+}
+
+.content .wp-pagenavi {
+	margin-top: 0;
+	padding-top: 10px;
+}
